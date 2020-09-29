@@ -55,7 +55,7 @@ public class ItLogger {
                 try {
                     Defect newIssue = new Defect(parseTitle(input), parseStatus(input),
                                         parseSeverity(input), parseDeadline(input), parseOwner(input));
-                    //System.out.println(test.toString());
+                    System.out.println(newIssue.toString());
                     issueList.addIssue(newIssue);
                 } catch (ParseException e) {
                     System.out.println(e);
